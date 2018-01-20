@@ -1,0 +1,50 @@
+#price {
+    color: darkorange;
+    border: none;
+    background-color: #EEEEEE;
+}
+
+#submit {
+    background-color: darkorange;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 48px;
+}
+
+.hidden {
+	display: none !important;
+}
+
+body{
+	text-align:center;
+	margin-top:5%;
+}
+
+p{
+	font-family: Arial, sans-serif;
+	font-size: 64pt;
+	font-weight: bold;
+}
+
+#results {
+	font-size: 36pt;
+}
+
+#error {
+	font-size: 16pt;
+	color: red;
+}
+
+#date {
+	color: darkorange;
+}
+
+.footer {
+  font-size: 10pt;
+	font-family: "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+  bottom: 0%;
+  left: 0%; right: 0%;
+  position: fixed;
+}
