@@ -41,17 +41,24 @@
 
 <body class="middle">
     <p>When Was Bitcoin Last</p>
-    <p>$<span id="price" contenteditable="true">100</span>?</p>
+    <p>$
+        <span id="price" contenteditable="true">100</span>?</p>
     <p id="error" class="hidden">Price must be a positive integer.</p>
     <button type="submit" id="submit">
-        <i id="spinner" class="fa fa-spinner fa-spin hidden"></i><span id="button-text">Submit</span>
+        <i id="spinner" class="fa fa-spinner fa-spin hidden"></i>
+        <span id="button-text">Submit</span>
     </button>
     <p id="results" class="hidden">
-        The last time you could have bought bitcoin for $<span id="price-results"></span> was on <span id="date"></span>
+        The last time you could have bought bitcoin for $
+        <span id="price-results"></span> was on
+        <span id="date"></span>
     </p>
 
     <p class="footer">
-        Created by <a href="https://twitter.com/sangaman">Daniel McNally</a> - Powered by <a href="https://www.coindesk.com/price/">CoinDesk</a> - See the source on <a href="https://github.com/sangaman/wwbl">GitHub</a>
+        Created by
+        <a href="https://twitter.com/sangaman">Daniel McNally</a> - Powered by
+        <a href="https://www.coindesk.com/price/">CoinDesk</a> - See the source on
+        <a href="https://github.com/sangaman/wwbl">GitHub</a>
     </p>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="app.js"></script>

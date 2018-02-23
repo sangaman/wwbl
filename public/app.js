@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   function submit() {
     const price = $("#price").text();
     if (price != parseInt(price, 10) || price < 1) {
@@ -7,7 +7,7 @@ $(document).ready(function() {
     }
     $("#spinner").removeClass('hidden');
     $("#button-text").addClass('hidden');
-    $.get('/price/' + price, function(data) {
+    $.get('/price/' + price, function (data) {
       $("#date").text(data._id);
       $("#price-results").text(price);
       $("#results").removeClass('hidden');
@@ -18,16 +18,16 @@ $(document).ready(function() {
     });
   }
 
-  $("#submit").click(function() {
+  $("#submit").click(function () {
     submit();
   });
 
-  $("#price").blur(function() {
+  $("#price").blur(function () {
     if ($("#price").text().length === 0)
       $("#price").text(1);
   });
 
-  $("#price").keypress(function() {
+  $("#price").keypress(function () {
     if (event.keyCode === 13) {
       if ($("#price").text().length === 0)
         $("#price").text(1);
